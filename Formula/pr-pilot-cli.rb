@@ -10,10 +10,11 @@ class PrPilotCli < Formula
 
   def install
     venv = virtualenv_create(libexec, "python3")
-    venv.pip_install resources
-    venv.pip_install_and_link buildpath
 
-    # Install dependencies from requirements.txt
+    system libexec/"bin/python", "-m", "ensurepip"
+    system libexec/"bin/pip", "install", "--upgrade", "pip"
+
+    venv.pip_install_and_link buildpath
     system libexec/"bin/pip", "install", "-r", buildpath/"requirements.txt"
   end
 
