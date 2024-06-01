@@ -9,7 +9,12 @@ class PrPilotCli < Formula
   depends_on "python@3.10"
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3")
+    venv.pip_install resources
+    venv.pip_install_and_link buildpath
+
+    # Install dependencies from requirements.txt
+    system libexec/"bin/pip", "install", "-r", buildpath/"requirements.txt"
   end
 
   test do
