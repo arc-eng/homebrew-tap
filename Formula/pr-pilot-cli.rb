@@ -122,6 +122,6 @@ class PrPilotCli < Formula
   end
 
   test do
-    system bin/"pilot", "--help"
+    system "#{bin}/pilot", "--help"
   end
 end
