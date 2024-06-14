@@ -2,13 +2,14 @@ class PrPilotCli < Formula
   include Language::Python::Virtualenv
 
   desc "CLI for PR Pilot, a text-to-task automation platform for Github."
+  homepage "https://www.pr-pilot.ai"
   license "GPL-3.0"
 
-  url "https://files.pythonhosted.org/packages/23/4d/526e00a25416e7b641efd3dc38d9319b259fea7b0ca9819c1b670eebdbce/pr_pilot_cli-1.8.9.tar.gz"
-  sha256 "110808de446703e630b801e013e685c586399fdc3c139d6d1232dafa7abaf761"
+  url "https://files.pythonhosted.org/packages/14/62/ded99016dfcd1ab91e0cdebd4f2082f0eac80e13655a88f07bbc125ef69c/pr_pilot_cli-1.8.10.tar.gz"
+  sha256 "704c3961760fb75ce48ec163181fccff87cd250fc93f6314d37201adab946a6d"
 
-  depends_on "python3"
-  depends_on "rust"
+  depends_on "python@3.10"
+  depends_on "rust" => :build
 
   resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz"
@@ -46,18 +47,18 @@ class PrPilotCli < Formula
   end
 
   resource "pr-pilot" do
-    url "https://files.pythonhosted.org/packages/ec/e3/c932c35967bb45ceba392cda0874cebe4ffb2d9813ce517f7794979ec567/pr_pilot-1.5.3.tar.gz"
-    sha256 "9fc1d70938f42800078ed44afd56c95dd8c088b0796c38b0f3e61ecbb1a1c778"
+    url "https://files.pythonhosted.org/packages/3c/f6/349152d8f0b620b9f4f79b2323e706d70a77b8f3904310f378dc3079e787/pr_pilot-1.5.4.tar.gz"
+    sha256 "75e911b84a8308100481027de8bb0d71f6b828845d62ce82ae855533cc0c037a"
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/cd/fc/70fe71ff78f680d584eba9c55a30092f6ef0b9cf0c75a74bd35a24151a83/pydantic-2.7.0.tar.gz"
-    sha256 "b5ecdd42262ca2462e2624793551e80911a1e989f462910bb81aef974b4bb383"
+    url "https://files.pythonhosted.org/packages/4b/de/38b517edac45dd022e5d139aef06f9be4762ec2e16e2b14e1634ba28886b/pydantic-2.6.4.tar.gz"
+    sha256 "b1704e0847db01817624a6b86766967f552dd9dbf3afba4004409f908dcc84e6"
   end
 
   resource "pydantic-core" do
-    url "https://files.pythonhosted.org/packages/3d/28/d693aab237fca82da327990a88a983b2b84b890032076ee4a87e18038dbb/pydantic_core-2.18.1.tar.gz"
-    sha256 "de9d3e8717560eb05e28739d1b35e4eac2e458553a52a301e51352a7ffc86a35"
+    url "https://files.pythonhosted.org/packages/77/3f/65dbe5231946fe02b4e6ea92bc303d2462f45d299890fd5e8bfe4d1c3d66/pydantic_core-2.16.3.tar.gz"
+    sha256 "1cac689f80a3abab2d3c0048b29eea5751114054f032a941a32de4c852c59cad"
   end
 
   resource "pygments" do
@@ -78,11 +79,6 @@ class PrPilotCli < Formula
   resource "rich" do
     url "https://files.pythonhosted.org/packages/b3/01/c954e134dc440ab5f96952fe52b4fdc64225530320a910473c1fe270d9aa/rich-13.7.1.tar.gz"
     sha256 "9be308cb1fe2f1f57d67ce99e95af38a1e2bc71ad9813b0e247cf7ffbcc3a432"
-  end
-
-  resource "setuptools" do
-    url "https://files.pythonhosted.org/packages/c8/1f/e026746e5885a83e1af99002ae63650b7c577af5c424d4c27edcf729ab44/setuptools-69.1.1.tar.gz"
-    sha256 "5c0806c7d9af348e6dd3777b4f4dbb42c7ad85b190104837488eab9a7c945cf8"
   end
 
   resource "six" do
@@ -123,6 +119,6 @@ class PrPilotCli < Formula
   end
 
   test do
-    system bin/"pilot", "--help"
+    system "#{bin}/pilot", "--help"
   end
 end
