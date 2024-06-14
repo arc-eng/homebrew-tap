@@ -8,7 +8,7 @@ class PrPilotCli < Formula
   sha256 "110808de446703e630b801e013e685c586399fdc3c139d6d1232dafa7abaf761"
 
   depends_on "python3"
-  depends_on "rust" => :build
+  depends_on "rust"
 
   resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz"
