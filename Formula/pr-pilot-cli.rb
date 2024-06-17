@@ -5,8 +5,8 @@ class PrPilotCli < Formula
   homepage "https://www.pr-pilot.ai"
   license "GPL-3.0"
 
-  url "https://files.pythonhosted.org/packages/14/62/ded99016dfcd1ab91e0cdebd4f2082f0eac80e13655a88f07bbc125ef69c/pr_pilot_cli-1.8.10.tar.gz"
-  sha256 "704c3961760fb75ce48ec163181fccff87cd250fc93f6314d37201adab946a6d"
+  url "https://files.pythonhosted.org/packages/01/a1/440320e5a92525be2f2892c8c3773e5948a169c6c0c80a579b57fea7db72/pr_pilot_cli-1.9.0.tar.gz"
+  sha256 "67d52a388866f5ba1d793bfe8d8e22fe6d9e962d2348d59b9166a7fd1169d218"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -24,6 +24,11 @@ class PrPilotCli < Formula
   resource "colorama" do
     url "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz"
     sha256 "08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"
+  end
+
+  resource "humanize" do
+    url "https://files.pythonhosted.org/packages/76/21/7a0b24fae849562397efd79da58e62437243ae0fd0f6c09c6bc26225b75c/humanize-4.9.0.tar.gz"
+    sha256 "582a265c931c683a7e9b8ed9559089dea7edcf6cc95be39a3cbc2c5d5ac2bcfa"
   end
 
   resource "jinja2" do
@@ -47,8 +52,8 @@ class PrPilotCli < Formula
   end
 
   resource "pr-pilot" do
-    url "https://files.pythonhosted.org/packages/3c/f6/349152d8f0b620b9f4f79b2323e706d70a77b8f3904310f378dc3079e787/pr_pilot-1.5.4.tar.gz"
-    sha256 "75e911b84a8308100481027de8bb0d71f6b828845d62ce82ae855533cc0c037a"
+    url "https://files.pythonhosted.org/packages/fe/41/004ae0a12c28c8cae7b88b7ce442ada3af9f08adcb76d95a5513455d5e7a/pr_pilot-1.6.1.tar.gz"
+    sha256 "eeeee96c78289f40e31e6bd7e637598656a5e0326b7f915e95bef76e2caa3587"
   end
 
   resource "pydantic" do
