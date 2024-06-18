@@ -5,8 +5,8 @@ class PrPilotCli < Formula
   homepage "https://www.pr-pilot.ai"
   license "GPL-3.0"
 
-  url "https://files.pythonhosted.org/packages/3b/88/aae21e4f8d699f02b2436ae27b66419598a6cfd476e6317e306d198474a0/pr_pilot_cli-1.10.1.tar.gz"
-  sha256 "1dc4c34a806fe33e718db2b7ad0b13be1a6b7f5d3b6c5546fe845036a99dc7ac"
+  url "https://files.pythonhosted.org/packages/bb/44/8b5fac91a6e2d0a7f4115f1fb501226524fe1633fe69105be8b2eda8d232/pr_pilot_cli-1.11.0.tar.gz"
+  sha256 "d69927ccde7e4ab1734444c00fd0beac241a4c900063e576fffca4919a8bde23"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -14,6 +14,16 @@ class PrPilotCli < Formula
   resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz"
     sha256 "aff07c09a53a08bc8cfccb9c85b05f1aa9a2a6f23728d790723543408344ce89"
+  end
+
+  resource "ansicon" do
+    url "https://files.pythonhosted.org/packages/b6/e2/1c866404ddbd280efedff4a9f15abfe943cb83cde6e895022370f3a61f85/ansicon-1.89.0.tar.gz"
+    sha256 "e4d039def5768a47e4afec8e89e83ec3ae5a26bf00ad851f914d1240b444d2b1"
+  end
+
+  resource "blessed" do
+    url "https://files.pythonhosted.org/packages/25/ae/92e9968ad23205389ec6bd82e2d4fca3817f1cdef34e10aa8d529ef8b1d7/blessed-1.20.0.tar.gz"
+    sha256 "2cdd67f8746e048f00df47a2880f4d6acbcdb399031b604e34ba8f71d5787680"
   end
 
   resource "click" do
@@ -26,14 +36,29 @@ class PrPilotCli < Formula
     sha256 "08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"
   end
 
+  resource "editor" do
+    url "https://files.pythonhosted.org/packages/2a/92/734a4ab345914259cb6146fd36512608ea42be16195375c379046f33283d/editor-1.6.6.tar.gz"
+    sha256 "bb6989e872638cd119db9a4fce284cd8e13c553886a1c044c6b8d8a160c871f8"
+  end
+
   resource "humanize" do
     url "https://files.pythonhosted.org/packages/76/21/7a0b24fae849562397efd79da58e62437243ae0fd0f6c09c6bc26225b75c/humanize-4.9.0.tar.gz"
     sha256 "582a265c931c683a7e9b8ed9559089dea7edcf6cc95be39a3cbc2c5d5ac2bcfa"
   end
 
+  resource "inquirer" do
+    url "https://files.pythonhosted.org/packages/cc/40/916e30dfa68e567c0d5e96bc82d38e33e5d6ac2ee940df181918b9144f6b/inquirer-3.2.5.tar.gz"
+    sha256 "4f3773e840aa1346d10b1f958728a0a621adc288065b33a95dade6e214b26b60"
+  end
+
   resource "jinja2" do
     url "https://files.pythonhosted.org/packages/ed/55/39036716d19cab0747a5020fc7e907f362fbf48c984b14e62127f7e68e5d/jinja2-3.1.4.tar.gz"
     sha256 "4a3aee7acbbe7303aede8e9648d13b8bf88a429282aa6122a993f0ac800cb369"
+  end
+
+  resource "jinxed" do
+    url "https://files.pythonhosted.org/packages/48/8a/b0aea3822dec616c95be0cbc54d834e17cb072cbd75af75e442180b1fb20/jinxed-1.2.1.tar.gz"
+    sha256 "30c3f861b73279fea1ed928cfd4dfb1f273e16cd62c8a32acfac362da0f78f3f"
   end
 
   resource "markdown-it-py" do
@@ -81,9 +106,19 @@ class PrPilotCli < Formula
     sha256 "bfdf460b1736c775f2ba9f6a92bca30bc2095067b8a9d77876d1fad6cc3b4a43"
   end
 
+  resource "readchar" do
+    url "https://files.pythonhosted.org/packages/23/85/a83385c8765af35c3fdd9cf67a387107b99bc545b8559e1f097c9d777dde/readchar-4.1.0.tar.gz"
+    sha256 "6f44d1b5f0fd93bd93236eac7da39609f15df647ab9cea39f5bc7478b3344b99"
+  end
+
   resource "rich" do
     url "https://files.pythonhosted.org/packages/b3/01/c954e134dc440ab5f96952fe52b4fdc64225530320a910473c1fe270d9aa/rich-13.7.1.tar.gz"
     sha256 "9be308cb1fe2f1f57d67ce99e95af38a1e2bc71ad9813b0e247cf7ffbcc3a432"
+  end
+
+  resource "runs" do
+    url "https://files.pythonhosted.org/packages/26/6d/b9aace390f62db5d7d2c77eafce3d42774f27f1829d24fa9b6f598b3ef71/runs-1.2.2.tar.gz"
+    sha256 "9dc1815e2895cfb3a48317b173b9f1eac9ba5549b36a847b5cc60c3bf82ecef1"
   end
 
   resource "six" do
@@ -106,9 +141,19 @@ class PrPilotCli < Formula
     sha256 "d0570876c61ab9e520d776c38acbbb5b05a776d3f9ff98a5c8fd5162a444cf19"
   end
 
+  resource "wcwidth" do
+    url "https://files.pythonhosted.org/packages/6c/63/53559446a878410fc5a5974feb13d31d78d752eb18aeba59c7fef1af7598/wcwidth-0.2.13.tar.gz"
+    sha256 "72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5"
+  end
+
   resource "wheel" do
     url "https://files.pythonhosted.org/packages/b0/b4/bc2baae3970c282fae6c2cb8e0f179923dceb7eaffb0e76170628f9af97b/wheel-0.42.0.tar.gz"
     sha256 "c45be39f7882c9d34243236f2d63cbd58039e360f85d0913425fbd7ceea617a8"
+  end
+
+  resource "xmod" do
+    url "https://files.pythonhosted.org/packages/72/b2/e3edc608823348e628a919e1d7129e641997afadd946febdd704aecc5881/xmod-1.8.1.tar.gz"
+    sha256 "38c76486b9d672c546d57d8035df0beb7f4a9b088bc3fb2de5431ae821444377"
   end
 
   resource "yaspin" do
