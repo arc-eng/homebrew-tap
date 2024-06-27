@@ -5,8 +5,8 @@ class PrPilotCli < Formula
   homepage "https://www.pr-pilot.ai"
   license "GPL-3.0"
 
-  url "https://files.pythonhosted.org/packages/9a/fd/90946dc6ae5824fa733633efe734d3474f5c6919282f18931f48b67ac156/pr_pilot_cli-1.11.14.tar.gz"
-  sha256 "e491092fc629080226a0d0907f328b07fdf2390be865af0c29567b3fae411cb8"
+  url "https://files.pythonhosted.org/packages/29/ef/5f5d06ff148f0d0396524ee4513b13b88473f532d59e92abd4e1d5ec7fc4/pr_pilot_cli-1.11.15.tar.gz"
+  sha256 "e449ac8e1be9182eec45218eab9f20819aac0baaf9d8b00539df77de56adb831"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
