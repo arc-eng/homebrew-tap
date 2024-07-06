@@ -5,8 +5,8 @@ class PrPilotCli < Formula
   homepage "https://www.pr-pilot.ai"
   license "GPL-3.0"
 
-  url "https://files.pythonhosted.org/packages/2e/3d/3e23f239ab77e1acdb03036b147cf201e7575b65e81a0fbbad14efa1b299/pr_pilot_cli-1.12.1.tar.gz"
-  sha256 "b637ef2b2026eeed6b5222117ce3b0873c701013c2e96730b9c2d117c4bf7a70"
+  url "https://files.pythonhosted.org/packages/a3/50/e9a41aff9d6820da439090c8c68c52bbddf1a14096316ccaff910334f849/pr_pilot_cli-1.13.0.tar.gz"
+  sha256 "18654c9e0c3214f0f3b85cf5f4dede3c68d10429f583dd51ac53ad7bd3d747e3"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -47,8 +47,8 @@ class PrPilotCli < Formula
   end
 
   resource "inquirer" do
-    url "https://files.pythonhosted.org/packages/cc/40/916e30dfa68e567c0d5e96bc82d38e33e5d6ac2ee940df181918b9144f6b/inquirer-3.2.5.tar.gz"
-    sha256 "4f3773e840aa1346d10b1f958728a0a621adc288065b33a95dade6e214b26b60"
+    url "https://files.pythonhosted.org/packages/f2/33/d495a92c48203f33d2f4556a0a662dab1bd511a7458910c866f1d7a6a1a3/inquirer-3.3.0.tar.gz"
+    sha256 "2722cec4460b289aab21fc35a3b03c932780ff4e8004163955a8215e20cfd35e"
   end
 
   resource "jinja2" do
