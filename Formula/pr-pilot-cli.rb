@@ -5,8 +5,8 @@ class PrPilotCli < Formula
   homepage "https://www.pr-pilot.ai"
   license "GPL-3.0"
 
-  url "https://files.pythonhosted.org/packages/75/e8/f444e9a73fdb523e61b4947d95244ecff1e281718b8a0e3bd20c94d0cf50/pr_pilot_cli-1.13.1.tar.gz"
-  sha256 "16616ad11ad1df35623b1b98f1f51048ee019109061a2fe833ce3621439faba7"
+  url "https://files.pythonhosted.org/packages/a2/dc/c4b96411552a54987f7b0b0837d4aeba9c739f1a7e6114fda2b3d1f5ba83/pr_pilot_cli-1.14.0.tar.gz"
+  sha256 "a483db2a143cf4dd063734922820e8db54df4894258caa2b04f2b0b73fe03d9c"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -144,6 +144,11 @@ class PrPilotCli < Formula
   resource "wcwidth" do
     url "https://files.pythonhosted.org/packages/6c/63/53559446a878410fc5a5974feb13d31d78d752eb18aeba59c7fef1af7598/wcwidth-0.2.13.tar.gz"
     sha256 "72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5"
+  end
+
+  resource "websockets" do
+    url "https://files.pythonhosted.org/packages/2e/62/7a7874b7285413c954a4cca3c11fd851f11b2fe5b4ae2d9bee4f6d9bdb10/websockets-12.0.tar.gz"
+    sha256 "81df9cbcbb6c260de1e007e58c011bfebe2dafc8435107b0537f393dd38c8b1b"
   end
 
   resource "wheel" do
