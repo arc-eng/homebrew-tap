@@ -5,8 +5,8 @@ class PrPilotCli < Formula
   homepage "https://www.pr-pilot.ai"
   license "GPL-3.0"
 
-  url "https://files.pythonhosted.org/packages/e4/9f/406064b685bf6199bfe3db26fcf12dd6a15146c07af76e5f0a5fce342ca3/pr_pilot_cli-1.15.1.tar.gz"
-  sha256 "69b8cf67cf2e2e888310009caf97e900b54f84e4510a2e807335ae2cb837596c"
+  url "https://files.pythonhosted.org/packages/b5/33/d2bd391aa1f76519f8aab758906d9ee242c0e7d19d12fba2c132ec43be45/pr_pilot_cli-1.17.0.tar.gz"
+  sha256 "74e6c942b0ecff0db09b573c9063291df5f44c954d7fda6aa08081d1af66d8bb"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -42,13 +42,13 @@ class PrPilotCli < Formula
   end
 
   resource "humanize" do
-    url "https://files.pythonhosted.org/packages/76/21/7a0b24fae849562397efd79da58e62437243ae0fd0f6c09c6bc26225b75c/humanize-4.9.0.tar.gz"
-    sha256 "582a265c931c683a7e9b8ed9559089dea7edcf6cc95be39a3cbc2c5d5ac2bcfa"
+    url "https://files.pythonhosted.org/packages/5d/b1/c8f05d5dc8f64030d8cc71e91307c1daadf6ec0d70bcd6eabdfd9b6f153f/humanize-4.10.0.tar.gz"
+    sha256 "06b6eb0293e4b85e8d385397c5868926820db32b9b654b932f57fa41c23c9978"
   end
 
   resource "inquirer" do
-    url "https://files.pythonhosted.org/packages/f2/33/d495a92c48203f33d2f4556a0a662dab1bd511a7458910c866f1d7a6a1a3/inquirer-3.3.0.tar.gz"
-    sha256 "2722cec4460b289aab21fc35a3b03c932780ff4e8004163955a8215e20cfd35e"
+    url "https://files.pythonhosted.org/packages/f3/06/ef91eb8f3feafb736aa33dcb278fc9555d17861aa571b684715d095db24d/inquirer-3.4.0.tar.gz"
+    sha256 "8edc99c076386ee2d2204e5e3653c2488244e82cb197b2d498b3c1b5ffb25d0b"
   end
 
   resource "jinja2" do
@@ -57,8 +57,8 @@ class PrPilotCli < Formula
   end
 
   resource "jinxed" do
-    url "https://files.pythonhosted.org/packages/48/8a/b0aea3822dec616c95be0cbc54d834e17cb072cbd75af75e442180b1fb20/jinxed-1.2.1.tar.gz"
-    sha256 "30c3f861b73279fea1ed928cfd4dfb1f273e16cd62c8a32acfac362da0f78f3f"
+    url "https://files.pythonhosted.org/packages/20/d0/59b2b80e7a52d255f9e0ad040d2e826342d05580c4b1d7d7747cfb8db731/jinxed-1.3.0.tar.gz"
+    sha256 "1593124b18a41b7a3da3b078471442e51dbad3d77b4d4f2b0c26ab6f7d660dbf"
   end
 
   resource "markdown-it-py" do
@@ -77,8 +77,8 @@ class PrPilotCli < Formula
   end
 
   resource "pr-pilot" do
-    url "https://files.pythonhosted.org/packages/fe/41/004ae0a12c28c8cae7b88b7ce442ada3af9f08adcb76d95a5513455d5e7a/pr_pilot-1.6.1.tar.gz"
-    sha256 "eeeee96c78289f40e31e6bd7e637598656a5e0326b7f915e95bef76e2caa3587"
+    url "https://files.pythonhosted.org/packages/f4/5d/2b0dbc2a9f00e2c915df37101504203a26136c27280674ac3309922c2595/pr_pilot-1.7.0.tar.gz"
+    sha256 "00eac0847ea91fc207ab0168fc43b3ae8be961357e85423566aac591387a690b"
   end
 
   resource "pydantic" do
@@ -107,8 +107,8 @@ class PrPilotCli < Formula
   end
 
   resource "readchar" do
-    url "https://files.pythonhosted.org/packages/23/85/a83385c8765af35c3fdd9cf67a387107b99bc545b8559e1f097c9d777dde/readchar-4.1.0.tar.gz"
-    sha256 "6f44d1b5f0fd93bd93236eac7da39609f15df647ab9cea39f5bc7478b3344b99"
+    url "https://files.pythonhosted.org/packages/18/31/2934981710c63afa9c58947d2e676093ce4bb6c7ce60aac2fcc4be7d98d0/readchar-4.2.0.tar.gz"
+    sha256 "44807cbbe377b72079fea6cba8aa91c809982d7d727b2f0dbb2d1a8084914faa"
   end
 
   resource "rich" do
