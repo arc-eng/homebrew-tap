@@ -22,8 +22,8 @@ class PrPilotCli < Formula
   end
 
   resource "arcane-engine" do
-    url "https://files.pythonhosted.org/packages/06/bc/0e50eba9ae1c27422a5b197fd42081b212163e13d4ed2eb50c335e2ec8ba/arcane_engine-1.9.0.tar.gz"
-    sha256 "0ebcdbd2ae388462f7c9950d0b7c1b03453dddc8ea9b19d64b117b74bb569b3b"
+    url "https://files.pythonhosted.org/packages/c5/58/5786eb628470ae1e56b8b44ba4dc00c2e03df5d475c9cfdc6e6fac0fecd2/arcane_engine-1.9.1.tar.gz"
+    sha256 "daf8c59ca7a7d7b87ac589b4a1fe4bc1f1f644140661631ba4aa2ca9968ab2b4"
   end
 
   resource "blessed" do
