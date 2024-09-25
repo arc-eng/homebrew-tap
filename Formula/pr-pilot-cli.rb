@@ -5,8 +5,8 @@ class PrPilotCli < Formula
   homepage "https://www.pr-pilot.ai"
   license "GPL-3.0"
 
-  url "https://files.pythonhosted.org/packages/7d/a3/66ebb3d73e14cf9a521972d55517461bee8e208a3180bdba338d047980d2/pr_pilot_cli-1.20.0.tar.gz"
-  sha256 "982c00f5e26c5105658686d1a5b8d50a4c090ed79e9317e7d149a8ab2b1b4f69"
+  url "https://files.pythonhosted.org/packages/2e/63/dfc5cddd446921f7e72c9680d9cee2a857e6e7a37b65b8f7bafdf455218e/pr_pilot_cli-1.20.1.tar.gz"
+  sha256 "fc5f4980c027a5b8a28aee5184db25cb816ead6f3dcadbe5c7ea578ae9665a83"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
@@ -22,8 +22,8 @@ class PrPilotCli < Formula
   end
 
   resource "arcane-engine" do
-    url "https://files.pythonhosted.org/packages/5b/5c/4b07adf9fc2009724968a7df747184a731a596335c0f0217e6dba75cd84f/arcane_engine-1.8.0.tar.gz"
-    sha256 "b0054edda3489e3fbb8b26e6cc5abce1413d51fff832b723139084cf4dad50fb"
+    url "https://files.pythonhosted.org/packages/06/bc/0e50eba9ae1c27422a5b197fd42081b212163e13d4ed2eb50c335e2ec8ba/arcane_engine-1.9.0.tar.gz"
+    sha256 "0ebcdbd2ae388462f7c9950d0b7c1b03453dddc8ea9b19d64b117b74bb569b3b"
   end
 
   resource "blessed" do
