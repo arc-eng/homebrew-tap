@@ -2,11 +2,11 @@ class ArcaneCli < Formula
   include Language::Python::Virtualenv
 
   desc "CLI for Arcane Engine, a text-to-task automation platform for Github."
-  homepage "https://www.arcane.engineer"
+  homepage "https://arcane.engineer"
   license "GPL-3.0"
 
-  url "https://files.pythonhosted.org/packages/40/45/b08a56ebf5945740ebdb777ba2606a78493465bc5f55d224eead0ae0abb0/pr_pilot_cli-1.20.2.tar.gz"
-  sha256 "dec2746bc30e7809a4412675f8f01eed8aa11f8d2d45856ad4b2d71a4be35ff3"
+  url "https://files.pythonhosted.org/packages/51/25/f980b3c1e3aacccbef4aff0a2385041c85164167544c77ac0595dafc493a/arcane_cli-1.20.2.tar.gz"
+  sha256 "3a237d1e09e192183d3402512049ae00e403361d2ac85b6837daa402ad8f2463"
 
   depends_on "python@3.10"
   depends_on "rust" => :build
