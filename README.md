@@ -1,34 +1,29 @@
 <div align="center">
-<img src="https://avatars.githubusercontent.com/ml/17635?s=140&v=" width="100" alt="PR Pilot Logo">
+<img src="https://avatars.githubusercontent.com/ml/17635?s=140&v=" width="100" alt="Arcane Engine Logo">
 </div>
 
 <p align="center">
-  <a href="https://github.com/apps/pr-pilot-ai/installations/new"><b>Install</b></a> |
-  <a href="https://docs.pr-pilot.ai">Documentation</a> |
-  <a href="https://www.pr-pilot.ai/blog">Blog</a> |
-  <a href="https://www.pr-pilot.ai">Website</a>
+  <a href="https://github.com/apps/arcane-engine/installations/new"><b>Install</b></a> |
+  <a href="https://docs.arcane.engineer">Documentation</a> |
+  <a href="https://www.arcane.engineer">Website</a>
 </p>
 
-# PR Pilot CLI
+# Arcane CLI
 
-PR Pilot gives you a natural language interface for your Github projects.
-Given a prompt, it uses LLMs (Large Language Models) to autonomously fulfill tasks by interacting with your code base
-and Github issues.
+The Arcane CLI is a command-line interface that allows you to interact with the Arcane Engine from your terminal. You can use the CLI to automate repetitive tasks, create custom tools, and integrate with other services.
 
 ## Installation
 
-Prerequisites:
-1. **[Install the PR Pilot app](https://github.com/apps/pr-pilot-ai/installations/new)** on your Github repository
-2. **[Generate an API key](https://app.pr-pilot.ai/dashboard/api-keys/)** in the dashboard
+Prerequisite: [Install the Arcane Engine app](https://github.com/apps/arcane-engine/installations/new) on your Github repository
 
-Install:
+Then, install the CLI:
 ```
-brew tap pr-pilot-ai/homebrew-tap
-brew install pr-pilot-cli
+brew tap arc-eng/homebrew-tap
+brew install arcane-cli
 ```
 
 ## Contributing
 Contributors are welcome to improve the CLI by submitting pull requests or reporting issues. For more details, check the project's GitHub repository.
 
 ## License
-The PR Pilot CLI is open-source software licensed under the GPL-3 license.
+The Arcane Engine CLI is open-source software licensed under the GPL-3 license.
